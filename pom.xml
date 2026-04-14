@@ -8,7 +8,11 @@
 		<version>3.5.13</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.pepe</groupId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>kafkaprod</module>
+    </modules>
+    <groupId>com.pepe</groupId>
 	<artifactId>ejemplokafka2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
