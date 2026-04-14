@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>kafkaprod</module>
+        <module>kafkaconsumer</module>
     </modules>
     <groupId>com.pepe</groupId>
 	<artifactId>ejemplokafka2</artifactId>

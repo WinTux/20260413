@@ -24,7 +24,7 @@ public class RecentchangeProducer {
         String topic = "recentchange_de_wikimedia";
         // Leer datos en tiempo real
         BackgroundEventHandler event = new RecentchangeHandler(kafkaTemplate,topic);
-        String url = "https://stream.wikimedia.org/v2/stream/recentchange";
+        String url = "http://localhost:8094/orden";
         BackgroundEventSource.Builder builder = new BackgroundEventSource.Builder(event, new EventSource.Builder(URI.create(url)));
         BackgroundEventSource eventSource = builder.build();
         eventSource.start();
